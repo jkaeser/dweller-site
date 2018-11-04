@@ -11,10 +11,10 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-black">
+    <nav className="bg-black font-header">
       <div className="flex flex-wrap items-center justify-between max-w-xl mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-white">
-          <span className="font-bold text-xl tracking-tight">
+          <span className="font-bold text-3xl">
             Dweller
           </span>
         </Link>
@@ -37,14 +37,7 @@ const Header = () => {
           id="nav"
           className="hidden md:flex md:items-center w-full md:w-auto"
         >
-          <div className="text-sm">
-            <Link
-              to="/"
-              className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-white"
-            >
-              Home
-            </Link>
-
+          <div className="text-xl tracking-wide">
             <Link
               to="/about"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"

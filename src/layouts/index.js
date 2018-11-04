@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import "./index.css";
 
 const TemplateWrapper = ({ children }) => (
-  <div className="flex flex-col font-sans min-h-screen text-grey-darkest bg-primary">
+  <div className="flex flex-col font-sans min-h-screen text-white bg-grey-darkest">
     <Helmet
       title="Gatsby Starter Tailwind"
       meta={[
