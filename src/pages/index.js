@@ -2,14 +2,13 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
-        title="Home"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        title="Music"
+        keywords={[`dweller`, `dweller philadelphia`, `philadelphia music`]}
       />
 
       <div className="flex flex-wrap items-center justify-center">

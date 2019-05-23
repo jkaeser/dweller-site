@@ -6,7 +6,7 @@ class Footer extends React.Component {
       <footer className="bg-blue">
         <div className="max-w-4xl p-4 md:p-8">
           <p className="text-white">
-            Copyright 2019 Dweller
+            <span className="font-sans">©</span> {new Date().getFullYear() } Dweller
           </p>
         </div>
       </footer>

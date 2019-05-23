@@ -18,7 +18,8 @@ module.exports = {
       'wide': '1280px'
     },
     fontFamily: {
-      'handwritten': ['Gaegu', 'sans']
+      'handwritten': ['Gaegu', 'sans'],
+      'sans': ['Arial', 'sans']
     }
   },
   variants: {},

@@ -16,7 +16,7 @@ function Header({ siteTitle }) {
           to="/"
           className={ linkClasses }
         >
-          Home
+          Music
         </Link>
 
         <Link

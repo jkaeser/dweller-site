@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`
+    title: `Dweller`,
+    description: `Philadelphia based rock band`,
+    author: `John Kaeser`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,10 +12,10 @@ module.exports = {
         name: `gatsby-starter-tailwind`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#4dc0b5`,
+        background_color: `#ffde9b`,
+        theme_color: `#00036e`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/dweller-d.png`
       }
     },
     `gatsby-plugin-postcss`,

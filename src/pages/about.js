@@ -2,14 +2,13 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
 
 function AboutPage() {
   return (
     <Layout>
       <SEO
         title="About"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`dweller`, `dweller philadelphia`, `philadelphia music`]}
       />
 
       <div className="flex flex-col md:flex-row items-center">
