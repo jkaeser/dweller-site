@@ -14,21 +14,12 @@ function AboutPage() {
 
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-2/3 md:mr-8">
-          <p className="border-l-4 border-gray-900 font-serif leading-loose pl-4 text-justify">
-            The point is... to live one's life in the full complexity of what
-            one is, which is something much darker, more contradictory, more of
-            a maelstrom of impulses and passions, of cruelty, ecstacy, and
-            madness, than is apparent to the civilized being who glides on the
-            surface and fits smoothly into the world.
+          <p>
+            Starting as the experimental and alternative side project of Cody Bluett and Luke Harsel while playing in the band Family Vacation in their late college years, Dweller has grown into a full-blown four-piece band that has taken hold of its roots in folk, alternative, and 90's rock to explore new sonic territory. Joined by John Evin Groome on bass and John Kaeser on drums, Dweller has transformed itself to the sound it has always meant to be.
           </p>
-
-          <p className="font-bold mt-4 text-right text-xs uppercase">
-            – Thomas Nagel
+          <p className="mt-4">
+            Beginning in January of 2017, the four best friends and musicians have pieced together their self-titled record little by little, recording and mixing the entire album in their very own home in Fishtown, Philadelphia. The songs on the album reflect a youthful progress, reshaping and recomposing older songs and lyrics to fit with fresh and exciting new material, all while introducing brand new synergy between members respective instruments to create a developed and cohesive record.
           </p>
-        </div>
-
-        <div className="w-2/3 md:w-1/3">
-          <img src={dogIllustration} alt="A dog relaxing" />
         </div>
       </div>
     </Layout>

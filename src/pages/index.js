@@ -12,27 +12,18 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
-      <div className="text-center">
-        <img
-          src={catAndHumanIllustration}
-          className="block mx-auto w-1/2"
-          alt="Cat and human sitting on a couch"
-        />
-
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{" "}
-          <a
-            href="https://tailwindcss.com/"
-            className="font-bold no-underline text-gray-900"
-          >
-            Tailwind
-          </a>
-          , a utility-first CSS framework.
-        </p>
+      <div className="flex flex-wrap items-center justify-center">
+        <iframe
+          style={{
+            border: '0',
+            width: '500px',
+            height: '1027px'
+          }}
+          src="https://bandcamp.com/EmbeddedPlayer/album=4021454801/size=large/bgcol=ffffff/linkcol=0687f5/package=4208657613/transparent=true/"
+          seamless
+        >
+          <a href="http://dwellermusic.bandcamp.com/album/dweller-2">Dweller by Dweller</a>
+        </iframe>
       </div>
     </Layout>
   );
