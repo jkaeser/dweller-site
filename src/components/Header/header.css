@@ -1,0 +1,52 @@
+.header {
+  background: center/contain url('../../images/aquarium-bg.jpg');
+  border-right: 4px solid var(--c-black);
+}
+.header a {
+  color: var(--c-black);
+  text-shadow: 2px 2px var(--c-white);
+  border: 1px solid transparent;
+  background-image: linear-gradient(to right, var(--c-white) 0, var(--c-black) 100%);
+  background-size: 0%;
+  background-position: 0px bottom;
+  background-repeat: no-repeat;
+}
+.header a:focus {
+  outline: 2px solid var(--c-black);
+  border-color: var(--c-white);
+}
+.header a:hover,
+.header a:focus {
+  text-shadow: 3px 3px var(--c-white);
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.logo > span {
+  display: inline-block;
+}
+.logo > span:first-of-type,
+.logo > span:last-of-type {
+  font-size: 2.5rem
+}
+
+@media (min-width: 1024px) {
+  .layout__header {
+    width: var(--width-sidebar-tablet);
+  }
+
+  .logo {
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .layout__header {
+    width: var(--width-sidebar-desktop);
+  }
+}

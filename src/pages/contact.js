@@ -1,20 +1,18 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "components/Layout";
+import SEO from "components/Seo";
 
-function ContactPage() {
-  return (
-    <Layout>
-      <SEO
-        title="Contact"
-        keywords={[`dweller`, `dweller philadelphia`, `philadelphia music`]}
-      />
-      <div className="foo">
-        Shoot us an email at <a className="font-bold hover:underline" href="mailto:dwellerphilly@gmail.com">dwellerphilly@gmail.com</a>.
-      </div>
-    </Layout>
-  );
-}
+const ContactPage = () => (
+  <Layout>
+    <SEO
+      title="Contact"
+      keywords={[`dweller`, `dweller philadelphia`, `philadelphia music`]}
+    />
+    <p>
+      Shoot us an email at <a className="font-bold hover:underline" href="mailto:dwellerphilly@gmail.com">dwellerphilly@gmail.com</a>.
+    </p>
+  </Layout>
+)
 
 export default ContactPage;
