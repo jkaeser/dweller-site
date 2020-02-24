@@ -10,10 +10,16 @@ const AboutPage = () => (
       keywords={[`dweller`, `dweller philadelphia`, `philadelphia music`]}
     />
     <p>
-      Starting as the experimental and alternative side project of Cody Bluett and Luke Harsel while playing in the band Family Vacation in their late college years, Dweller has grown into a full-blown four-piece band that has taken hold of its roots in folk, alternative, and 90's rock to explore new sonic territory. Joined by John Evin Groome on bass and John Kaeser on drums, Dweller has transformed itself to the sound it has always meant to be.
+      Dweller started in 2015 as a lo-fi side project between Cody Bluett and Luke Harsel as they shared a house near Temple University. After a few years of recording EPs and playing a handful of two-piece shows, they added John Evin Groome on bass and John Kaeser on drums in 2017.
     </p>
     <p>
-      Beginning in January of 2017, the four best friends and musicians have pieced together their self-titled record little by little, recording and mixing the entire album in their very own home in Fishtown, Philadelphia. The songs on the album reflect a youthful progress, reshaping and recomposing older songs and lyrics to fit with fresh and exciting new material, all while introducing brand new synergy between members respective instruments to create a developed and cohesive record.
+      In 2018 the four piece finished recording and mixing their full length self-titled album from the basement of their house in Fishtown, Philadelphia.
+    </p>
+    <p>
+      Dan Goldin of the blog <a href="http://post-trash.com/news/2018/12/2/dweller-bugs-video-post-trash-premiere">Post-Trash</a> called the self-titled record "A jangly batch of indie rock that feels good. Good for the spirit, good for listening… just an overall goodness."
+    </p>
+    <p>
+      Dweller released their self-titled record digitally and on cassettes through Minneapolis based tape-label <a href="http://www.forgedartifacts.com/">Forged Artifacts</a>, which will be releasing their follow up record on cassette tape and digital platforms in Spring 2020.
     </p>
   </Layout>
 )
