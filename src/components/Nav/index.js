@@ -3,24 +3,16 @@ import { Link } from "gatsby"
 
 import "./nav.css"
 
-const Nav = () => (
-  <nav className="nav">
+const Nav = ({ items, id }) => (
+  <nav className="nav" id={ id }>
     <ul className="nav__items">
-      <li className="nav__item">
-        <Link to="/" className="nav__link">
-          Music
-        </Link>
-      </li>
-      <li className="nav__item">
-        <Link to="/about" className="nav__link">
-          About
-        </Link>
-      </li>
-      <li className="nav__item">
-        <Link to="/contact" className="nav__link">
-          Contact
-        </Link>
-      </li>
+      { items.map(item => (
+        <li className="nav__item">
+          <Link to={ item.href } className="nav__link">
+            { item.label }
+          </Link>
+        </li>
+      ))}
     </ul>
   </nav>
 )

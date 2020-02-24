@@ -6,6 +6,21 @@ import headerImg from 'images/dweller-bcamp-header.png';
 
 import './header.css'
 
+const nav_items = [
+  {
+    'href': '/',
+    'label': 'Music'
+  },
+  {
+    'href': '/about',
+    'label': 'About'
+  },
+  {
+    'href': '/contact',
+    'label': 'Contact'
+  },
+];
+
 const Header = ({ siteTitle }) => (
   <header className="header layout__header">
     <Link to="/" className="logo">
@@ -13,7 +28,7 @@ const Header = ({ siteTitle }) => (
       <span>/ / /</span>
       <span>Aquarium</span>
     </Link>
-    <Nav />
+    <Nav items={ nav_items } id={`main`} />
   </header>
 )
 
