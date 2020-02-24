@@ -12,6 +12,25 @@
   box-sizing: border-box;
   transition: inherit;
 }
+#skip-link {
+  transition: none;
+  text-indent: -99999px;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+}
+#skip-link:focus {
+  text-indent: 0;
+  z-index: 2;
+  color: var(--c-black);
+  background-color: var(--c-white);
+  outline: 0;
+  border-color: var(--c-black);
+}
 
 body {
   background-color: var(--c-white);
@@ -34,7 +53,10 @@ img {
   max-width: 100%;
 }
 iframe {
+  display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .layout__header {
