@@ -53,19 +53,19 @@ const nav_social = [
     'icon_alt': 'Spotify logo'
   },
   {
-    'href': 'https://open.spotify.com/artist/4naQpSaaarFkX4EXYCJ4bW',
+    'href': 'https://music.apple.com/us/album/dweller/1435833656',
     'label': 'Apple Music',
     'icon': icon_apple,
     'icon_alt': 'Apple logo'
   },
   {
-    'href': 'https://open.spotify.com/artist/4naQpSaaarFkX4EXYCJ4bW',
+    'href': 'https://music.apple.com/us/album/dweller/1435833656',
     'label': 'Bandcamp',
     'icon': icon_bc,
     'icon_alt': 'Bandcamp logo'
   },
   {
-    'href': 'https://open.spotify.com/artist/4naQpSaaarFkX4EXYCJ4bW',
+    'href': 'https://www.youtube.com/playlist?list=OLAK5uy_kdMiIBHNJ-KT2mQcGeQlbswYYH1zTokfY',
     'label': 'YouTube',
     'icon': icon_yt,
     'icon_alt': 'YouTube logo'
@@ -77,7 +77,7 @@ const Header = ({ siteTitle }) => (
     <div className="header__inner">
       <Link to="/" className="logo">
         <span>Dweller</span>
-        <span>/ / /</span>
+        <span aria-role="presentation">/ / /</span>
         <span>Aquarium</span>
       </Link>
       <Nav items={ nav_main } id={`main`} />
