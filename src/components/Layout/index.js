@@ -19,15 +19,19 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="layout__wrapper">
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="layout__content">
-          <div className="layout__content-inner">
-            {children}
+      <>
+        <a href="#main" id="skip-link">Skip to main content</a>
+        <div className="layout__wrapper">
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div className="layout__content">
+            <div className="layout__content-inner">
+              <span id="main"></span>
+              {children}
+            </div>
           </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </>
     )}
   />
 )
