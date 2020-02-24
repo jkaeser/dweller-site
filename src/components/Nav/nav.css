@@ -18,6 +18,7 @@
   text-shadow: 1px 1px var(--c-white);
   border: 1px solid transparent;
 }
+.nav__link.active,
 .nav__link:hover,
 .nav__link:focus {
   text-shadow: 2px 2px var(--c-white);

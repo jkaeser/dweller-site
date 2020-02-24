@@ -8,7 +8,7 @@ const Nav = ({ items, id, align }) => (
     <ul className="nav__items">
       { items.map(item => (
         <li className="nav__item">
-          <Link to={ item.href } className="nav__link">
+          <Link to={ item.href } className="nav__link" activeClassName="active">
             { item.icon &&
               <img src={item.icon} alt={item.icon_alt}/>
             }
