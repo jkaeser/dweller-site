@@ -4,7 +4,6 @@
   overflow: auto;
 }
 .header__inner {
-  max-width: 250px;
   margin: 0 auto;
 }
 
@@ -42,6 +41,10 @@
 @media (min-width: 1024px) {
   .layout__header {
     width: var(--width-sidebar-tablet);
+  }
+
+  .header__inner {
+    max-width: 250px;
   }
 
   .logo {

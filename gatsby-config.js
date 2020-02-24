@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Dweller`,
-    description: `Philadelphia based rock band`,
+    description: `Dweller is a rock band from Philadelpha, PA.`,
     author: `John Kaeser`
   },
   plugins: [
