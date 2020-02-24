@@ -59,7 +59,7 @@ const nav_social = [
     'icon_alt': 'Apple logo'
   },
   {
-    'href': 'https://music.apple.com/us/album/dweller/1435833656',
+    'href': 'https://dwellermusic.bandcamp.com/',
     'label': 'Bandcamp',
     'icon': icon_bc,
     'icon_alt': 'Bandcamp logo'
