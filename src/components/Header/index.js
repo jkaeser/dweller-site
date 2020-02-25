@@ -28,6 +28,10 @@ const nav_main = [
     'label': 'Videos'
   },
   {
+    'href': '/press',
+    'label': 'Press'
+  },
+  {
     'href': '/contact',
     'label': 'Contact'
   }
