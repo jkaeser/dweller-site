@@ -13,10 +13,11 @@
   margin-right: .75rem;
 }
 .nav__link {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   color: var(--c-black);
   text-shadow: 1px 1px var(--c-white);
   border: 1px solid transparent;
+  text-transform: uppercase;
 }
 .nav__link.active,
 .nav__link:hover,
@@ -36,7 +37,7 @@
 }
 
 @media (min-width: 1024px) {
-  .nav + .nav {
+  .nav {
     margin-top: 4rem;
   }
   .nav--horizontal .nav__item {

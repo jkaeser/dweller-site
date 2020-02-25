@@ -13,18 +13,26 @@
   transition: inherit;
 }
 #skip-link {
-  transition: none;
-  text-indent: -99999px;
-  color: transparent;
   position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
   top: 0;
   left: 0;
   right: 0;
   text-align: center;
   border-bottom: 1px solid transparent;
+  transition: none;
 }
 #skip-link:focus {
-  text-indent: 0;
+  width: auto;
+  height: auto;
+  clip: initial;
+  margin: auto;
+  overflow: visible;
   z-index: 2;
   color: var(--c-black);
   background-color: var(--c-white);
@@ -39,7 +47,7 @@
   width: 1px;
   margin: -1px;
   padding: 0;
-  border: 0; 
+  border: 0;
 }
 
 body {

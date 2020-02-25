@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import "./nav.css"
 
 const Nav = ({ items, id, align }) => (
-  <nav className={`nav ${align ? align : ''}`} id={ id }>
+  <nav className={`nav ${align ? align : ''}`} id={`nav-${id}`}>
     <ul className="nav__items">
       { items.map(item => (
         <li className="nav__item">

@@ -38,6 +38,12 @@
   font-size: 2.5rem
 }
 
+.header__subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  text-shadow: 1px 1px 6px var(--c-white);
+}
+
 @media (min-width: 1024px) {
   .layout__header {
     width: var(--width-sidebar-tablet);
@@ -45,10 +51,6 @@
 
   .header__inner {
     max-width: 250px;
-  }
-
-  .logo {
-    margin-bottom: 4rem;
   }
 }
 @media (min-width: 1200px) {

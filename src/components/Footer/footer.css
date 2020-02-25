@@ -13,5 +13,6 @@
     z-index: 1;
     background-color: transparent;
     color: var(--c-black);
+    text-shadow: 1px 1px 6px var(--c-white);
   }
 }
