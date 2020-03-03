@@ -84,7 +84,7 @@ const Header = ({ siteTitle }) => (
         <span aria-role="presentation">/ / /</span>
         <span>Aquarium</span>
       </Link>
-      <div class="header__subtitle">Out Spring 2020</div>
+      <div class="header__subtitle">New <abbr title="Long Playing (album)">LP</abbr> Out Spring 2020</div>
       <Nav items={ nav_main } id={`main`} />
       <NavExternal items={ nav_social } id={`social`} align='horizontal' />
     </div>

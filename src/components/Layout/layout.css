@@ -59,6 +59,14 @@ body {
 }
 a {
   text-decoration: none;
+  font-weight: 600;
+  color: var(--c-black);
+  text-shadow: 1px 1px 0 #e0c187;
+  border-bottom: 1px solid transparent;
+}
+a:hover,
+a:focus {
+  border-color: var(--c-black);
 }
 p {
   margin: 0;

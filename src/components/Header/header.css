@@ -1,5 +1,5 @@
 .header {
-  background: center/contain url('../../images/aquarium-bg.jpg');
+  background: center/cover url('../../images/aquarium-bg.jpg');
   border-right: 4px solid var(--c-black);
   overflow: auto;
 }
