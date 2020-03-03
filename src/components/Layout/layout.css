@@ -59,14 +59,6 @@ body {
 }
 a {
   text-decoration: none;
-  font-weight: 600;
-  color: var(--c-black);
-  text-shadow: 1px 1px 0 #e0c187;
-  border-bottom: 1px solid transparent;
-}
-a:hover,
-a:focus {
-  border-color: var(--c-black);
 }
 p {
   margin: 0;
@@ -91,6 +83,16 @@ iframe {
 .layout__content {
   padding: 1rem 2rem;
   margin-top: 2rem;
+}
+.layout__content a {
+  font-weight: 600;
+  color: var(--c-black);
+  text-shadow: 1px 1px 0 #e0c187;
+  border-bottom: 1px solid transparent;
+}
+.layout__content a:hover,
+.layout__content a:focus {
+  border-color: var(--c-black);
 }
 .layout__content-inner {
   max-width: 45rem;
