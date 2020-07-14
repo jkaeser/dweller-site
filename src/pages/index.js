@@ -14,10 +14,14 @@ const IndexPage = () => (
       style={{
         border: '0',
         width: '500px',
-        height: '592px'
+        height: '936px'
       }}
-      src="https://bandcamp.com/EmbeddedPlayer/track=1780949402/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless>
-      <a href="http://dwellermusic.bandcamp.com/track/blue-van-black-sky-2">Blue Van Black Sky by Dweller</a>
+      src="https://bandcamp.com/EmbeddedPlayer/album=1559208815/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/"
+      seamless
+    >
+      <a href="http://dwellermusic.bandcamp.com/album/aquarium">
+        Aquarium by Dweller
+      </a>
     </iframe>
     <iframe
       style={{

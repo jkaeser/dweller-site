@@ -1,6 +1,6 @@
 .header {
   background: center/cover url('../../images/aquarium-bg.jpg');
-  border-right: 4px solid var(--c-black);
+  border-right: 2px solid var(--c-black);
   overflow: auto;
 }
 .header__inner {
@@ -39,7 +39,7 @@
 }
 
 .header__subtitle {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
   text-shadow: 1px 1px 6px var(--c-white);
 }
