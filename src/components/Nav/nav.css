@@ -8,6 +8,7 @@
   padding: 0;
 }
 .nav__item {
+  position: relative;
   display: inline-block;
   margin-left: .75rem;
   margin-right: .75rem;
@@ -19,6 +20,20 @@
   border: 1px solid transparent;
   text-transform: uppercase;
 }
+
+.nav__item:nth-of-type(4n-3) > .nav__link:hover {
+  color: var(--c-green);
+}
+.nav__item:nth-of-type(4n-2) > .nav__link:hover {
+  color: var(--c-red);
+}
+.nav__item:nth-of-type(4n-1) > .nav__link:hover {
+  color: var(--c-blue-3);
+}
+.nav__item:nth-of-type(4n-0) > .nav__link:hover {
+  color: var(--c-blue-4);
+}
+
 .nav__link.active,
 .nav__link:hover,
 .nav__link:focus {

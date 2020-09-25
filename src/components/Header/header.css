@@ -2,6 +2,7 @@
   background: center/cover url('../../images/aquarium-bg.jpg');
   border-right: 2px solid var(--c-black);
   overflow: auto;
+  margin-top: 3.5rem;
 }
 .header__inner {
   margin: 0 auto;

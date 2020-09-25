@@ -20,7 +20,10 @@ const AboutPage = () => (
       Dan Goldin of the blog <a href="http://post-trash.com/news/2018/12/2/dweller-bugs-video-post-trash-premiere">Post-Trash</a> called the self-titled record "A jangly batch of indie rock that feels good. Good for the spirit, good for listening… just an overall goodness."
     </p>
     <p>
-      Dweller released their self-titled record digitally and on cassettes through Minneapolis based tape-label <a href="http://www.forgedartifacts.com/">Forged Artifacts</a>, which will be releasing their follow up record on cassette tape and digital platforms in Fall 2020.
+      Dweller released their self-titled record digitally and on cassettes through Minneapolis based tape-label <a href="http://www.forgedartifacts.com/">Forged Artifacts</a> in October 2018.
+    </p>
+    <p>
+      Their follow up record, Aquarium, was also released through Forged Artifacts on cassette tape and digital platforms in September 2020.
     </p>
   </Layout>
 )

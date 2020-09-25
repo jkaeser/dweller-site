@@ -21,6 +21,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <a href="#main" id="skip-link">Skip to main content</a>
+        <div id="blm">
+          <a href="https://blacklivesmatter.com/" target="_blank">Black Lives Matter</a>
+        </div>
         <div className="layout__wrapper">
           <Header siteTitle={data.site.siteMetadata.title} />
           <div className="layout__content">
