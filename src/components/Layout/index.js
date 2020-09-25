@@ -21,8 +21,11 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <a href="#main" id="skip-link">Skip to main content</a>
-        <div id="blm">
-          <a href="https://blacklivesmatter.com/" target="_blank">Black Lives Matter</a>
+        <div class="banners">
+          <a href="https://blacklivesmatter.com/" class="blm" target="_blank">Black Lives Matter</a>
+          <a href="https://www.nivassoc.org/" class="niva" target="_blank">
+            <abbr title="National Independent Venue Association">NIVA</abbr> #SaveOurStages
+          </a>
         </div>
         <div className="layout__wrapper">
           <Header siteTitle={data.site.siteMetadata.title} />

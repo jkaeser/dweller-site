@@ -69,7 +69,7 @@ const nav_social = [
     'icon_alt': 'Bandcamp logo'
   },
   {
-    'href': 'https://www.youtube.com/playlist?list=OLAK5uy_kdMiIBHNJ-KT2mQcGeQlbswYYH1zTokfY',
+    'href': 'https://www.youtube.com/channel/UC6C--XpN2rV1rFYAxi1MjVA',
     'label': 'YouTube',
     'icon': icon_yt,
     'icon_alt': 'YouTube logo'

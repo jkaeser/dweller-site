@@ -2,7 +2,7 @@
   background: center/cover url('../../images/aquarium-bg.jpg');
   border-right: 2px solid var(--c-black);
   overflow: auto;
-  margin-top: 3.5rem;
+  margin-top: 6.75rem;
 }
 .header__inner {
   margin: 0 auto;
@@ -48,6 +48,10 @@
 @media (min-width: 1024px) {
   .layout__header {
     width: var(--width-sidebar-tablet);
+  }
+
+  .header {
+    margin-top: 3.5rem;
   }
 
   .header__inner {
