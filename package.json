@@ -3,16 +3,17 @@
   "description": "Website for Philadelphia based rock band, Dweller.",
   "version": "1.0.0",
   "author": "John Kaeser <jakaeser44@gmail.com>",
+  "license": "Apache-2.0",
   "dependencies": {
-    "gatsby": "2.7.1",
+    "gatsby": "^2.7.1",
     "gatsby-alias-imports": "^1.0.4",
-    "gatsby-plugin-manifest": "2.1.1",
-    "gatsby-plugin-react-helmet": "3.0.12",
-    "graphql": "14.3.1",
-    "prop-types": "15.7.2",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-helmet": "5.2.1"
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "graphql": "^14.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
   },
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
