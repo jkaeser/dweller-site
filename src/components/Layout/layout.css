@@ -111,6 +111,7 @@ iframe[src*="youtube"] {
   color: var(--c-black);
   text-shadow: 1px 1px 0 var(--c-yellow-1);
   border-bottom: 1px solid transparent;
+  word-wrap: break-word;
 }
 .layout__content a.cta {
   display: block;
