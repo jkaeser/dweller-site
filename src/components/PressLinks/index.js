@@ -4,7 +4,7 @@ const PressLinks = ({ links }) => (
   <div class="PressLinks">
     { links.map(link => (
       <p>
-        <time datetime={ link.date }>{ link.date }: </time>
+        [<time datetime={ link.date }>{ link.date }] </time>
         <a href={ link.url }>{ link.url }</a>
       </p>
     )) }

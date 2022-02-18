@@ -45,7 +45,7 @@ const PressPage = () => (
       title="Press"
       keywords={[`dweller`, `dweller philadelphia`, `philadelphia music`]}
     />
-    <h1>Press</h1>
+    <h1 className="visually-hidden">Press</h1>
     <PressLinks links={ links } />
   </Layout>
 )

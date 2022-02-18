@@ -6,12 +6,9 @@ const Nav = ({ items, id, align }) => (
   <nav className={`nav ${align ? 'nav--' + align : ''}`} id={ id }>
     <ul className="nav__items">
       { items.map(item => (
-        <li className="nav__item">
+        <li className="nav__item" key={ item.href }>
           <a href={ item.href } className="nav__link">
-            { item.icon &&
-              <img src={item.icon} alt={item.icon_alt}/>
-            }
-            <span className={item.icon ? 'visually-hidden' : ''}>
+            <span>
               { item.label }
             </span>
           </a>
