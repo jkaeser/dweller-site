@@ -31,34 +31,7 @@ const nav_main = [
     'href': 'https://www.etsy.com/shop/DwellerMusicApparel',
     'label': 'Merch'
   }
-]
-
-const nav_social = [
-  {
-    'href': 'https://music.apple.com/us/album/dweller/1435833656',
-    'label': 'Apple Music',
-  },
-  {
-    'href': 'https://dwellermusic.bandcamp.com/',
-    'label': 'Bandcamp',
-  },
-  {
-    'href': 'https://www.facebook.com/dwellermusic/',
-    'label': 'Facebook',
-  },
-  {
-    'href': 'https://www.instagram.com/old_dweller/',
-    'label': 'Instagram',
-  },
-  {
-    'href': 'https://open.spotify.com/artist/4naQpSaaarFkX4EXYCJ4bW',
-    'label': 'Spotify',
-  },
-  {
-    'href': 'https://www.youtube.com/channel/UC6C--XpN2rV1rFYAxi1MjVA',
-    'label': 'YouTube',
-  }
-]
+];
 
 const Header = ({ siteTitle }) => (
   <header className="header layout__header">
@@ -69,7 +42,6 @@ const Header = ({ siteTitle }) => (
         <span>Black Lives Matter</span>
       </a>
       <Nav items={ nav_main } id={`main`} />
-      {/* <NavExternal items={ nav_social } id={`social`} /> */}
     </div>
   </header>
 )
