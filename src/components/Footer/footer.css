@@ -1,20 +1,10 @@
 .footer {
-  background-color: var(--c-black);
-  color: var(--c-white);
-  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--c-white-translucent);
+  padding: .5rem 1rem;
   margin-top: 2rem;
-  font-family: Arial, sans-serif;
   font-size: .8rem;
-}
-
-@media (min-width: 1024px) {
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    background-color: transparent;
-    color: var(--c-black);
-    text-shadow: 1px 1px 6px var(--c-white);
-  }
 }

@@ -9,7 +9,10 @@ const ContactPage = () => (
       title="Contact"
       keywords={[`dweller`, `dweller philadelphia`, `philadelphia music`]}
     />
-    <h1>Contact</h1>
+    <h1 className="visually-hidden">Contact</h1>
+    <p>
+      Follow us on <a href="https://www.facebook.com/dwellermusic/">Facebook</a> and <a href="https://www.instagram.com/old_dweller/">Instagram</a>.
+    </p>
     <p>
       Shoot us an email at <a className="font-bold hover:underline" href="mailto:dwellerphilly@gmail.com">dwellerphilly@gmail.com</a>.
     </p>

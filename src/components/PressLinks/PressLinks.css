@@ -1,0 +1,10 @@
+.PressLinks time {
+  padding: .0125rem .5rem;
+  border: 1px solid var(--c-yellow-1);
+  font-size: 1rem;
+  margin-right: .5rem;
+}
+
+.PressLinks p + p {
+  margin-top: 1.5rem;
+}

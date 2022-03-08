@@ -2,8 +2,9 @@
 
 :root {
   font-size: 16px;
-  --c-black: #000;
-  --c-white: #fff;
+  --c-black: #1f1f1f;
+  --c-white: #fcfcf9;
+  --c-white-translucent: hsla(60, 33%, 98%, .8);
   --c-green: #17572F;
   --c-green-translucent: rgba(23, 87, 47, .8);
   --c-red: #750C0C;
@@ -16,9 +17,11 @@
   --c-blue-3-translucent: rgba(79, 102, 161, .8);
   --c-blue-4: #0D1967;
   --c-blue-4-translucent: rgba(13, 25, 103, .8);
-  --width-sidebar-tablet: 20rem;
-  --width-sidebar-desktop: 28rem;
+  --c-yellow-1: #e0c187;
   --transition: all .2s ease, outline 0s linear;
+
+  background-color: var(--c-white);
+  color: var(--c-black);
 }
 * {
   box-sizing: border-box;
@@ -62,45 +65,7 @@
   border: 0;
 }
 
-.banners {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--c-black);
-  text-align: center;
-  z-index: 10;
-}
-.banners a {
-  display: block;
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
-  letter-spacing: 1px;
-  font-family: Arial, sans-serif;
-  color: var(--c-white);
-}
-.banners a:hover,
-.banners a:focus {
-  text-decoration: underline;
-}
-.banners a.blm {
-  text-transform: uppercase;
-}
-.banners a.blm:hover,
-.banners a.blm:focus {
-  color: #fce21b;
-}
-.banners a.niva {
-  background-color: #219c5a;
-}
-.banners a.niva:hover,
-.banners a.niva:focus {
-  background-color: #2e8b57;
-}
-
 body {
-  background-color: var(--c-white);
-  color: var(--c-black);
   margin: 0;
   transition: var(--transition);
   font-family: 'Crimson Text', Georgia, serif;
@@ -110,9 +75,9 @@ a {
 }
 p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
-p + p {
+p + * {
   margin-top: 1rem;
 }
 img {
@@ -121,60 +86,86 @@ img {
 iframe {
   display: block;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2rem;
 }
-iframe + iframe {
-  margin-top: 4rem;
+iframe[src*="bandcamp"] {
+  max-width: min(500px, 100%);
+}
+iframe[src*="youtube"] {
+  max-width: min(720px, 100%);
 }
 
 .layout__header {
-  padding: 1rem 2rem;
+  padding: 2rem 2rem .25rem;
 }
-.layout__content {
-  padding: 1rem 2rem;
-  margin-top: 5.5rem;
+.layout__content-inner {
+  padding: 3rem 2rem 5rem;
+  max-width: 80rem;
+}
+.layout__content-inner p {
+  max-width: 50rem;
+  background-color: var(--c-white-translucent);
 }
 .layout__content a {
   font-weight: 600;
   color: var(--c-black);
-  text-shadow: 1px 1px 0 #e0c187;
+  text-shadow: 1px 1px 0 var(--c-yellow-1);
   border-bottom: 1px solid transparent;
+  word-wrap: break-word;
+}
+.layout__content a.cta {
+  display: block;
+  max-width: min(320px, 100%);
+  padding: .5rem 0;
+  margin: .5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  text-shadow: none;
+  font-weight: initial;
+  background-color: #efefef;
+  border-bottom: 0;
+}
+.layout__content a.cta:last-of-type {
+  margin-bottom: 3rem;
+}
+.layout__content a.cta:hover,
+.layout__content a.cta:focus {
+  opacity: .8;
+}
+.layout__content a.cta.apple {
+  background-color: #000;
+  color: var(--c-white);
+}
+.layout__content a.cta.bandcamp {
+  background-color: #629aa9;
+  color: var(--c-white);
+}
+.layout__content a.cta.spotify {
+  background-color: #1DB954;
+  color: var(--c-white);
 }
 .layout__content a:hover,
-.layout__content a:focus {
+.layout__content a:focus-visible {
   border-color: var(--c-black);
 }
-.layout__content-inner {
-  max-width: 45rem;
-  margin: 0 auto;
+
+img.stuck {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  max-width: 20rem;
+  opacity: .5;
 }
 
 @media (min-width: 540px) {}
-@media (min-width: 768px) {}
-@media (min-width: 1024px) {
-  .banners {
-    display: flex;
-  }
-  .banners a {
-    flex-basis: 50%;
-  }
-  .banners a + a {
-    border-left: 1px solid var(--c-white);
-  }
-
-  .layout__header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-  }
-  .layout__content {
-    margin-left: var(--width-sidebar-tablet);
+@media (min-width: 768px) {
+  img.stuck {
+    max-width: 28rem;
   }
 }
-@media (min-width: 1200px) {
-  .layout__content {
-    margin-left: var(--width-sidebar-desktop);
+@media (min-width: 1024px) {
+  img.stuck {
+    max-width: 40rem;
   }
 }

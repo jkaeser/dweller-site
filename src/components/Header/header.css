@@ -1,65 +1,21 @@
 .header {
-  background: center/cover url('../../images/aquarium-bg.jpg');
-  border-right: 2px solid var(--c-black);
-  overflow: auto;
-  margin-top: 6.75rem;
+  background-color: var(--c-white-translucent);
 }
+
+.header .logo {
+  font-size: 1.35rem;
+  text-transform: uppercase;
+}
+
+.header a span {
+  border-bottom: 1px solid transparent;
+  color: var(--c-black);
+}
+.header a span:hover,
+.header a span:focus {
+  border-bottom-color: var(--c-black);
+}
+
 .header__inner {
   margin: 0 auto;
-}
-
-.logo {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto 2rem;
-  color: var(--c-black);
-  text-shadow: 2px 2px var(--c-white);
-  border: 1px solid transparent;
-  background-image: linear-gradient(to right, var(--c-white) 0, var(--c-black) 100%);
-  background-size: 0%;
-  background-position: 0px bottom;
-  background-repeat: no-repeat;
-}
-.logo:focus {
-  outline: 2px solid var(--c-black);
-  border-color: var(--c-white);
-}
-.logo:hover,
-.logo:focus {
-  text-shadow: 3px 3px var(--c-white);
-}
-.logo > span {
-  display: inline-block;
-}
-.logo > span:first-of-type,
-.logo > span:last-of-type {
-  font-size: 2.5rem
-}
-
-.header__subtitle {
-  font-size: 1.5rem;
-  text-align: center;
-  text-shadow: 1px 1px 6px var(--c-white);
-}
-
-@media (min-width: 1024px) {
-  .layout__header {
-    width: var(--width-sidebar-tablet);
-  }
-
-  .header {
-    margin-top: 3.5rem;
-  }
-
-  .header__inner {
-    max-width: 250px;
-  }
-}
-@media (min-width: 1200px) {
-  .layout__header {
-    width: var(--width-sidebar-desktop);
-  }
 }

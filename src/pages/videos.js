@@ -9,7 +9,7 @@ const AboutPage = () => (
       title="Videos"
       keywords={[`dweller`, `dweller philadelphia`, `philadelphia music`]}
     />
-    <h1>Videos</h1>
+    <h1 className="visually-hidden">Videos</h1>
     <iframe width="7200" height="405" src="https://www.youtube.com/embed/N2fkRe090LQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       <a href="https://youtu.be/N2fkRe090LQ">Watch Dweller – Elliot on YouTube</a>
     </iframe>
