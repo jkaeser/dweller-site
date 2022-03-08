@@ -1,19 +1,116 @@
+.nav {
+  position: relative;
+}
+
+.nav__toggle {
+  background-color: transparent;
+  border: 1px solid var(--c-black);
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  appearance: none;
+  position: relative;
+}
+.nav__toggle.open {
+  z-index: 1;
+  position: fixed;
+  right: 2rem;
+}
+.nav__toggle:hover,
+.nav__toggle:focus-visible {
+  background-color: var(--c-yellow-1);
+}
+
+.nav__toggle::before,
+.nav__toggle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: .9rem;
+  background-color: var(--c-black);
+  width: 1px;
+  transform: rotate(90deg);
+}
+.nav__toggle::before {
+  top: .25rem;
+}
+.nav__toggle::after {
+  top: .5rem;
+}
+
+.nav__toggle.open::before,
+.nav__toggle.open::after {
+  top: 0;
+}
+.nav__toggle.open::before {
+  transform: rotate(45deg);
+}
+.nav__toggle.open::after {
+  transform: rotate(-45deg);
+}
+
+.nav__navigation {
+  display: none;
+}
+.nav__navigation.open {
+  display: initial;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--c-blue-1-translucent-2);
+  padding: 2rem 1rem;
+  box-shadow: 0px 8px 8px var(--c-black-translucent);
+}
+.nav__navigation.open .nav__link {
+  font-size: 2rem;
+  padding: .125rem .5rem;
+}
+
 .nav__items {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .nav__item {
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
-.nav__item + .nav__item::before {
-  content: "/";
-  display: inline-block;
-  color: var(--c-black);
-  margin: 0 .5rem;
+.nav__item + .nav__item {
+  margin-top: .5rem;
 }
+
 .nav__link.active {
   font-weight: 600;
+}
+
+@media (min-width: 540px) {
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__navigation {
+    display: initial;
+  }
+
+  .nav__item {
+    display: inline-block;
+    text-align: initial;
+  }
+  .nav__item + .nav__item {
+    margin-top: 0;
+  }
+  .nav__item + .nav__item::before {
+    content: "/";
+    display: inline-block;
+    color: var(--c-black);
+    margin: 0 .5rem;
+  }
 }

@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import Nav from "components/Nav";
-import NavExternal from "components/Nav/NavExternal";
 
 import './header.css'
 
@@ -36,11 +35,13 @@ const nav_main = [
 const Header = ({ siteTitle }) => (
   <header className="header layout__header">
     <div className="header__inner">
-      <Link to="/" className="logo"><span>Dweller</span></Link>
-      <br />
-      <a href="https://blacklivesmatter.com/" target="_blank" className="blm">
-        <span>Black Lives Matter</span>
-      </a>
+      <div className="header__main">
+        <Link to="/" className="logo"><span>Dweller</span></Link>
+        <br />
+        <a href="https://blacklivesmatter.com/" target="_blank" className="blm">
+          <span>Black Lives Matter</span>
+        </a>
+      </div>
       <Nav items={ nav_main } id={`main`} />
     </div>
   </header>

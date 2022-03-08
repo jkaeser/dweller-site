@@ -2,7 +2,9 @@
 
 :root {
   font-size: 16px;
+  --font-family: 'Crimson Text', Georgia, serif;
   --c-black: #1f1f1f;
+  --c-black-translucent: hsla(0, 0%, 12%, .5);
   --c-white: #fcfcf9;
   --c-white-translucent: hsla(60, 33%, 98%, .8);
   --c-green: #17572F;
@@ -11,6 +13,7 @@
   --c-red-translucent: rgba(168, 16, 21, .8);
   --c-blue-1: #C8D9D6;
   --c-blue-1-translucent: rgba(200, 217, 214, .8);
+  --c-blue-1-translucent-2: rgba(200, 217, 214, .95);
   --c-blue-2: #A9D0FB;
   --c-blue-2-translucent: rgba(169, 208, 251, .8);
   --c-blue-3: #4F669F;
@@ -68,7 +71,7 @@
 body {
   margin: 0;
   transition: var(--transition);
-  font-family: 'Crimson Text', Georgia, serif;
+  font-family: var(--font-family);
 }
 a {
   text-decoration: none;
