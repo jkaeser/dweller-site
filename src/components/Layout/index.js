@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "components/Header";
 import Footer from "components/Footer";
@@ -62,35 +62,34 @@ const renderRandomImage = images => {
   )
 }
 
-const Layout = ({ children, images }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ children, images }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={data => (
-      <>
-        <a href="#main" id="skip-link">Skip to main content</a>
-        <div className="layout__wrapper">
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <div className="layout__content">
-            <div className="layout__content-inner">
-              <span id="main"></span>
-              {children}
-              {images && renderRandomImage(images)}
-            </div>
+    }
+  `);
+
+  return (
+    <>
+      <a href="#main" id="skip-link">Skip to main content</a>
+      <div className="layout__wrapper">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div className="layout__content">
+          <div className="layout__content-inner">
+            <span id="main"></span>
+            {children}
+            {images && renderRandomImage(images)}
           </div>
-          <Footer />
         </div>
-      </>
-    )}
-  />
-)
+        <Footer />
+      </div>
+    </>
+  );
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
