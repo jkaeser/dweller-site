@@ -29,21 +29,23 @@
   top: 0;
   right: 0;
   bottom: 0;
-  left: .9rem;
+  left: .2rem;
   background-color: var(--c-black);
-  width: 1px;
-  transform: rotate(90deg);
+  width: 1.5rem;
+  height: 1px;
+  transform: rotate(0deg);
+  transition: .2s transform ease;
 }
 .nav__toggle::before {
-  top: .25rem;
+  top: .75rem;
 }
 .nav__toggle::after {
-  top: .5rem;
+  top: 1.25rem;
 }
 
 .nav__toggle.open::before,
 .nav__toggle.open::after {
-  top: 0;
+  top: 50%;
 }
 .nav__toggle.open::before {
   transform: rotate(45deg);
