@@ -26,10 +26,6 @@ const nav_main = [
     'href': '/contact',
     'label': 'Contact'
   },
-  {
-    'href': 'https://www.etsy.com/shop/DwellerMusicApparel',
-    'label': 'Merch'
-  }
 ];
 
 const Header = ({ siteTitle }) => (
