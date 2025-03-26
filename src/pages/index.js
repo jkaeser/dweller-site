@@ -22,8 +22,24 @@ const IndexPage = () => (
     <iframe style={{
         border: '0',
         width: '500px',
+        height: '412px'
+      }}
+      id="the-sign-ahead"
+      title="The Sign Ahead by Dweller"
+      src="https://bandcamp.com/EmbeddedPlayer/album=3601451549/size=large/bgcol=ffffff/linkcol=63b2cc/artwork=small/transparent=true/"
+      seamless
+    >
+      <a href="https://dwellermusic.bandcamp.com/album/the-sign-ahead">
+        The Sign Ahead by Dweller
+      </a>
+    </iframe>
+    <iframe style={{
+        border: '0',
+        width: '500px',
         height: '120px'
       }}
+      id="crowbar"
+      title="Crowbar by Dweller"
       src="https://bandcamp.com/EmbeddedPlayer/track=2818753894/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/artwork=small/transparent=true/"
       seamless
     >
@@ -36,6 +52,8 @@ const IndexPage = () => (
         width: '500px',
         height: '472px',
       }}
+      id="aquarium"
+      title="Aquarium by Dweller"
       src="https://bandcamp.com/EmbeddedPlayer/album=1559208815/size=large/bgcol=ffffff/linkcol=63b2cc/artwork=small/transparent=true/"
       seamless
     >
@@ -48,6 +66,8 @@ const IndexPage = () => (
         width: '500px',
         height: '472px',
       }}
+      id="dweller"
+      title="Dweller by Dweller"
       src="https://bandcamp.com/EmbeddedPlayer/album=4021454801/size=large/bgcol=ffffff/linkcol=63b2cc/artwork=small/transparent=true/"
       seamless
     >
